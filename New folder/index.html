@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Montak Singh Hada | Aspiring Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    /* keeping your original CSS from the given template unchanged */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; line-height: 1.6; min-height: 100vh; scroll-behavior: smooth; overflow-x: hidden; }
+    a { color: #ffdd57; text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #fff; }
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px 80px; }
+    header { position: sticky; top: 0; background: rgba(102, 126, 234, 0.85); backdrop-filter: blur(10px); z-index: 1000; padding: 20px 0 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+    header .inner-header { max-width: 1000px; margin: auto; padding: 0 20px; display: flex; flex-direction: column; align-items: center; }
+    header h1 { font-size: 3rem; font-weight: 600; margin-bottom: 5px; letter-spacing: 2px; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); }
+    header p { font-weight: 300; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 15px; font-style: italic; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    nav a { font-weight: 600; font-size: 1rem; padding: 8px 16px; border-radius: 25px; background: rgba(255, 255, 255, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: background 0.3s ease, color 0.3s ease; }
+    nav a:hover { background: #ffdd57; color: #333; box-shadow: 0 6px 10px rgba(255, 221, 87, 0.7); }
+    .profile-pic { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 4px solid #ffdd57; box-shadow: 0 8px 20px rgba(255, 221, 87, 0.4); margin: 20px auto 40px; display: block; transition: transform 0.3s ease; }
+    .profile-pic:hover { transform: scale(1.05); }
+    section { background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 30px 40px; margin-bottom: 50px; box-shadow: 0 8px 20px rgba(0,0,0,0.25); backdrop-filter: blur(10px); opacity: 0; transform: translateY(20px); animation-fill-mode: forwards; animation-duration: 0.8s; animation-timing-function: ease-out; }
+    section.visible { opacity: 1; transform: translateY(0); }
+    section h2 { font-size: 2.2rem; margin-bottom: 20px; border-bottom: 3px solid #ffdd57; padding-bottom: 8px; letter-spacing: 1.5px; font-weight: 700; text-transform: uppercase; }
+    ul { list-style: none; padding-left: 0; }
+    ul li { margin-bottom: 15px; font-size: 1.15rem; display: flex; align-items: center; gap: 12px; }
+    ul li i { color: #ffdd57; min-width: 20px; font-size: 1.2rem; }
+    #projects ul li { background: rgba(255, 255, 255, 0.15); padding: 12px 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: default; transition: background 0.3s ease, transform 0.3s ease; }
+    #projects ul li:hover { background: #ffdd57; color: #333; transform: translateY(-5px); box-shadow: 0 8px 20px rgba(255, 221, 87, 0.5); }
+    #contact p { font-size: 1.15rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    #contact a { font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+    #contact a i { font-size: 1.2rem; color: #ffdd57; }
+    .btn-download { display: inline-block; margin-top: 20px; padding: 12px 28px; font-weight: 600; font-size: 1.1rem; color: #333; background: #ffdd57; border-radius: 30px; box-shadow: 0 6px 15px rgba(255, 221, 87, 0.7); transition: background 0.3s ease, color 0.3s ease; text-decoration: none; }
+    .btn-download:hover { background: #e6c84b; color: #111; box-shadow: 0 8px 20px rgba(230, 200, 75, 0.9); }
+    footer { text-align: center; padding: 25px 15px; font-size: 0.95rem; color: #ddd; border-top: 1px solid rgba(255, 255, 255, 0.25); margin-top: 60px; background: rgba(102, 126, 234, 0.85); backdrop-filter: blur(10px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); }
+    footer .social-icons { margin: 15px 0 10px; display: flex; justify-content: center; gap: 20px; }
+    footer .social-icons a { color: #ffdd57; font-size: 1.5rem; transition: color 0.3s ease; }
+    footer .social-icons a:hover { color: #fff; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+      section { padding: 20px 25px; }
+      nav a { margin: 0 8px; padding: 6px 12px; font-size: 0.9rem; }
+      .profile-pic { width: 110px; height: 110px; margin-bottom: 30px; }
+      ul li { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="inner-header">
+      <h1>Montak Singh Hada</h1>
+      <p>Aspiring Data Scientist & Software Developer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <img src="hello (3).jpg" alt="Profile picture of Montak Singh Hada" class="profile-pic" />
+
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>I'm a B.Tech Computer Science graduate from JECRC University with skills in Python, JavaScript, HTML, CSS, React.js, data analysis, machine learning, and Power BI. I gained hands-on experience during my ISRO internship, working on satellite data analysis and ML projects, alongside virtual internships at Cognizant and Goldman Sachs. I’m passionate about leveraging technical and analytical skills to solve real-world problems and build impactful solutions.</p>
+      <a href="Montak-Singh-new-resume.pdf" download class="btn-download">
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Python, JavaScript, HTML, CSS, React.js</li>
+        <li><i class="fa-solid fa-check"></i> Data Analysis (Pandas, Matplotlib, Power BI)</li>
+        <li><i class="fa-solid fa-check"></i> Machine Learning & Pattern Detection</li>
+        <li><i class="fa-solid fa-check"></i> Satellite & Geospatial Data Processing</li>
+        <li><i class="fa-solid fa-check"></i> Agile Methodologies</li>
+        <li><i class="fa-solid fa-check"></i> Google Cloud Platform Fundamentals</li>
+        <li><i class="fa-solid fa-check"></i> Salesforce (60+ Badges)</li>
+        <li><i class="fa-solid fa-check"></i> Cyber Security Fundamentals</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <ul>
+        <li><i class="fa-solid fa-gas-pump"></i><strong>Fuel Price Tracker:</strong> Python app for real-time fuel price analysis and visualization.</li>
+        <li><i class="fa-solid fa-brain"></i><strong>Field Detection Using ML:</strong> ML project for identifying patterns in datasets.</li>
+        <li><i class="fa-solid fa-cart-shopping"></i><strong>E-commerce Website:</strong> University project covering website building basics.</li>
+        <li><i class="fa-solid fa-list-check"></i><strong>To-Do List App:</strong> Task management app with local storage.</li>
+        <li><i class="fa-solid fa-university"></i><strong>College Search Interface:</strong> College data frontend with search & sort features.</li>
+        <li><i class="fa-solid fa-satellite"></i><strong>Satellite Data Analysis @ ISRO:</strong> ML-based analysis using INSAT & Sentinel datasets.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p><i class="fa-solid fa-phone"></i> Phone: <a href="tel:+919358411006">+91 9358411006</a></p>
+      <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:montakhada@gmail.com">montakhada@gmail.com</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/montak-hada-0b92b4231/" target="_blank">linkedin.com/in/montak-hada</a></p>
+      <p><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/yourgithubusername" target="_blank">github.com/yourgithubusername</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/montak-hada-0b92b4231/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourgithubusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:montakhada@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    &copy; 2025 Montak Singh Hada. All rights reserved.
+  </footer>
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+
+</body>
+</html>
